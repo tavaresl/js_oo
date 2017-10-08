@@ -7,8 +7,6 @@ function UsuariosController() {
   self.usuarioService = new UsuarioService()
   self.usuarios = []
   self.listaUsuarios = $('#usuarios-list')
-
-  self.carregarUsuarios()
 }
 
 UsuariosController.prototype.carregarUsuarios = function() {
@@ -50,3 +48,4 @@ UsuariosController.prototype.exibirUsuarios = function(usuarios) {
 }
 
 var userCtrl = new UsuariosController()
+userCtrl.carregarUsuarios()
